@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "143684646573",
+    "project_id": "smart-meter-67683",
+    "storage_bucket": "smart-meter-67683.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143684646573:android:a45d53ae8487ccdd547824",
+        "android_client_info": {
+          "package_name": "com.example.smart_meter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzMuda6ipHiD0q6zcyBFQavxxryGWItrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
