@@ -8,8 +8,8 @@ class TitleHeading extends StatelessWidget {
     return Text(
       title,
       style: TextStyle(
-        color: off_white,
-        fontSize: 40.0,
+        color: Colors.white,
+        fontSize: 30.0,
         fontWeight: FontWeight.w400,
       ),
     );

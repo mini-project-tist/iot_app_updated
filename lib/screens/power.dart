@@ -17,8 +17,8 @@ class Power extends StatefulWidget {
 }
 
 class _PowerState extends State<Power> {
-  DatabaseReference powerRef = FirebaseDatabase.instance.ref("power");
-  List<FlSpot> powerData = [];
+  DatabaseReference energyRef = FirebaseDatabase.instance.ref("energy");
+  List<FlSpot> energyData = [];
   List<String> dateLabels = []; // Store date labels for the X-axis
 
   @override
@@ -27,8 +27,9 @@ class _PowerState extends State<Power> {
     fetchPowerData();
   }
 
+
   void fetchPowerData() async {
-    DataSnapshot snapshot = await powerRef.get();
+    DataSnapshot snapshot = await energyRef.get();
 
     if (snapshot.exists && snapshot.value is Map) {
       Map<dynamic, dynamic> data = snapshot.value as Map<dynamic, dynamic>;
@@ -57,7 +58,7 @@ class _PowerState extends State<Power> {
       });
 
       setState(() {
-        powerData = tempList;
+        energyData = tempList;
         dateLabels = tempLabels;
       });
     }
@@ -67,24 +68,24 @@ class _PowerState extends State<Power> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: grey_colour,
+        backgroundColor: blueColour,
         leading: IconButton(
           icon: Icon(
-            Icons.arrow_back,
-            color: off_white,
-            size: 40,
+            Icons.arrow_back_ios_new_rounded,
+            color: Colors.white,
+            size: 25,
           ),
           onPressed: () {
             Navigator.pushNamed(context, UserHome.id);
           },
         ),
-        title: TitleHeading(title: 'Power Usage'),
+        title: TitleHeading(title: 'Electricity Usage'),
       ),
       body: Container(
         padding: const EdgeInsets.all(16.0),
         height: double.infinity,
-        decoration: kdecoration,
-        child: powerData.isEmpty
+        decoration: kBoxDecoration,
+        child: energyData.isEmpty
             ? Center(
                 child:
                     CircularProgressIndicator()) // Show loader while fetching data
@@ -97,7 +98,7 @@ class _PowerState extends State<Power> {
                       LineChartData(
                         minY: 0,
                         // Minimum value on Y-axis
-                        maxY: 1000,
+                        maxY: 100,
                         // Maximum value on Y-axis
                         gridData: FlGridData(
                           show: false,
@@ -105,24 +106,29 @@ class _PowerState extends State<Power> {
                         borderData: FlBorderData(
                             show: true,
                             border: Border.all(
-                              color: off_white,
+                              color: blackColour,
                             )),
                         titlesData: FlTitlesData(
+                          topTitles: AxisTitles(
+                            sideTitles: SideTitles(
+                              showTitles: false
+                            ),
+                          ),
                           rightTitles: AxisTitles(
                             sideTitles: SideTitles(
                               showTitles: true,
                               minIncluded: false,
-                              interval: 100,
+                              interval: 50,
                               // Labels every 100 units
                               reservedSize: 40,
                               // Adjust spacing
                               getTitlesWidget: (value, meta) {
-                                if (value % 100 == 0) {
+                                if (value % 10 == 0) {
                                   // Show only for multiples of 100
                                   return Text(
                                     value.toInt().toString(),
                                     style: TextStyle(
-                                        color: off_white, fontSize: 12),
+                                        color: blackColour, fontSize: 7),
                                   );
                                 }
                                 return Container();
@@ -133,7 +139,7 @@ class _PowerState extends State<Power> {
                             axisNameWidget: Text(
                               'Energy',
                               style: TextStyle(
-                                color: off_white,
+                                color: blackColour,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
@@ -151,37 +157,43 @@ class _PowerState extends State<Power> {
                                   return Text(
                                     dateLabels[index],
                                     style: TextStyle(
-                                      fontSize: 10,
-                                      color: off_white,
+                                      fontSize: 7,
+                                      color: offWhite,
                                     ),
                                   );
                                 }
                                 return Text('');
                               },
-                              reservedSize: 30,
+                              reservedSize: 40,
                               interval: 1,
                             ),
                           ),
                         ),
                         lineBarsData: [
                           LineChartBarData(
-                            spots: powerData,
+                            spots: energyData,
                             isCurved: false,
                             color: Colors.blue,
                             barWidth: 2,
                             belowBarData: BarAreaData(
                                 show: true,
-                                color: Colors.blue.withOpacity(0.3)),
+                              gradient: LinearGradient(
+                                colors: [Color(0xffffb228), Color(0xfffcd947)],
+                                begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter,
+                              ),
+                            ),
                             dotData: FlDotData(
                               show: true,
                               getDotPainter: (spot, percent, barData, index) {
+                                // Find the maximum y-value in the dataset
+                                double maxYValue = energyData.map((e) => e.y).reduce((a, b) => a > b ? a : b);
+
                                 return FlDotCirclePainter(
-                                  radius: 1,
-                                  // Change this value to increase/decrease dot size
-                                  color: Colors.blue,
-                                  // Change dot color
+                                  radius: 2, // Increase dot size for better visibility
+                                  color: spot.y == maxYValue ? Colors.red : Colors.blue, // Red if max value
                                   strokeWidth: 1,
-                                  strokeColor: Colors.blueGrey,
+                                  strokeColor: spot.y == maxYValue ? Colors.red : Colors.blueGrey,
                                 );
                               },
                             ),

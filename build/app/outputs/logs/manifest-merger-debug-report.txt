@@ -1,27 +1,27 @@
 -- Merging decision tree log ---
 application
-INJECTED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/main/AndroidManifest.xml:2:5-32:19
-INJECTED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/debug/AndroidManifest.xml
-MERGED from [:cloud_firestore] /Users/anoobvalath/StudioProjects/smart_meter/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:cloud_firestore] /Users/anoobvalath/StudioProjects/smart_meter/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_app_check] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_app_check/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_app_check] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_app_check/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_auth] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_auth] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_database] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_database/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_database] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_database/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
+INJECTED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/main/AndroidManifest.xml:2:5-32:19
+INJECTED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/debug/AndroidManifest.xml
+MERGED from [:cloud_firestore] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_app_check] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_app_check/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_app_check] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_app_check/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_auth] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_auth] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_database] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_database/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_database] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_database/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [com.google.firebase:firebase-appcheck-debug:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f7e87aacb067d93486cbaf9a5142ad0f/transformed/jetified-firebase-appcheck-debug-18.0.0/AndroidManifest.xml:21:5-29:19
 MERGED from [com.google.firebase:firebase-appcheck-debug:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f7e87aacb067d93486cbaf9a5142ad0f/transformed/jetified-firebase-appcheck-debug-18.0.0/AndroidManifest.xml:21:5-29:19
-MERGED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:28:5-73:19
-MERGED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:28:5-73:19
-MERGED from [com.google.firebase:firebase-firestore:25.1.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/6504e7165fb2dba49e5214bd25ce1a58/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:13:5-24:19
-MERGED from [com.google.firebase:firebase-firestore:25.1.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/6504e7165fb2dba49e5214bd25ce1a58/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:13:5-24:19
 MERGED from [com.google.firebase:firebase-appcheck-playintegrity:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/3f8f3d3b1e0ea49186adc4d891dc59d4/transformed/jetified-firebase-appcheck-playintegrity-18.0.0/AndroidManifest.xml:21:5-29:19
 MERGED from [com.google.firebase:firebase-appcheck-playintegrity:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/3f8f3d3b1e0ea49186adc4d891dc59d4/transformed/jetified-firebase-appcheck-playintegrity-18.0.0/AndroidManifest.xml:21:5-29:19
+MERGED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:28:5-73:19
+MERGED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d58fc7cbe056191d4aa562e8db3cb6f9/transformed/jetified-firebase-database-21.0.0/AndroidManifest.xml:25:5-36:19
 MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d58fc7cbe056191d4aa562e8db3cb6f9/transformed/jetified-firebase-database-21.0.0/AndroidManifest.xml:25:5-36:19
+MERGED from [com.google.firebase:firebase-firestore:25.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/4fa36d64a2d6870d5d6fd121654d3ba2/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:13:5-24:19
+MERGED from [com.google.firebase:firebase-firestore:25.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/4fa36d64a2d6870d5d6fd121654d3ba2/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:13:5-24:19
 MERGED from [com.google.firebase:firebase-appcheck-safetynet:16.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/156e4659c3bec1634d664de34cf3b50c/transformed/jetified-firebase-appcheck-safetynet-16.1.2/AndroidManifest.xml:23:5-31:19
 MERGED from [com.google.firebase:firebase-appcheck-safetynet:16.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/156e4659c3bec1634d664de34cf3b50c/transformed/jetified-firebase-appcheck-safetynet-16.1.2/AndroidManifest.xml:23:5-31:19
 MERGED from [com.google.firebase:firebase-appcheck:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/eee30d2c46da70226713658705372e1d/transformed/jetified-firebase-appcheck-18.0.0/AndroidManifest.xml:21:5-32:19
@@ -36,10 +36,10 @@ MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/anoobvalath/.gra
 MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/84513d08b235c643691ee2acad7571dd/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:22:5-39:19
 MERGED from [com.google.android.gms:play-services-safetynet:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f2b295cc3fbe01193cbb4f56ac5bcc7b/transformed/jetified-play-services-safetynet-18.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-safetynet:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f2b295cc3fbe01193cbb4f56ac5bcc7b/transformed/jetified-play-services-safetynet-18.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/8acc3d5c7646279991737ac4ca46e9ec/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:22:5-38:19
-MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/8acc3d5c7646279991737ac4ca46e9ec/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:22:5-38:19
 MERGED from [com.google.android.play:integrity:1.3.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f2d61f08ae48f92824cd8f0ce501880e/transformed/jetified-integrity-1.3.0/AndroidManifest.xml:5:5-6:19
 MERGED from [com.google.android.play:integrity:1.3.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f2d61f08ae48f92824cd8f0ce501880e/transformed/jetified-integrity-1.3.0/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/8acc3d5c7646279991737ac4ca46e9ec/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/8acc3d5c7646279991737ac4ca46e9ec/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:22:5-38:19
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/ad20e87211dffc1aeefb39854f87c546/transformed/jetified-firebase-appcheck-interop-17.1.0/AndroidManifest.xml:21:5-20
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/ad20e87211dffc1aeefb39854f87c546/transformed/jetified-firebase-appcheck-interop-17.1.0/AndroidManifest.xml:21:5-20
 MERGED from [com.google.android.gms:play-services-fido:20.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/1b404c6bbcb7240c9d18196d70d1ca72/transformed/jetified-play-services-fido-20.1.0/AndroidManifest.xml:7:5-8:19
@@ -65,27 +65,27 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/anoo
 MERGED from [com.google.android.play:core-common:2.0.3] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/4438c19b5eb021d4a90e09a1e9039d80/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:11:5-19:19
 MERGED from [com.google.android.play:core-common:2.0.3] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/4438c19b5eb021d4a90e09a1e9039d80/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:11:5-19:19
 	android:extractNativeLibs
-		INJECTED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/debug/AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/592c018595559ae2e3bd7f1234f1fa04/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 	android:name
-		INJECTED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/main/AndroidManifest.xml
 manifest
-ADDED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/main/AndroidManifest.xml:1:1-44:12
-MERGED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/main/AndroidManifest.xml:1:1-44:12
-INJECTED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-MERGED from [:cloud_firestore] /Users/anoobvalath/StudioProjects/smart_meter/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_app_check] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_app_check/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_auth] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_database] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_database/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_core] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-15:12
+ADDED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/main/AndroidManifest.xml:1:1-44:12
+MERGED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/main/AndroidManifest.xml:1:1-44:12
+INJECTED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+MERGED from [:cloud_firestore] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_app_check] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_app_check/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_auth] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_database] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_database/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_core] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [com.google.firebase:firebase-appcheck-debug:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f7e87aacb067d93486cbaf9a5142ad0f/transformed/jetified-firebase-appcheck-debug-18.0.0/AndroidManifest.xml:15:1-31:12
-MERGED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:17:1-75:12
-MERGED from [com.google.firebase:firebase-firestore:25.1.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/6504e7165fb2dba49e5214bd25ce1a58/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.firebase:firebase-appcheck-playintegrity:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/3f8f3d3b1e0ea49186adc4d891dc59d4/transformed/jetified-firebase-appcheck-playintegrity-18.0.0/AndroidManifest.xml:15:1-31:12
+MERGED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:17:1-75:12
 MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d58fc7cbe056191d4aa562e8db3cb6f9/transformed/jetified-firebase-database-21.0.0/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.firebase:firebase-firestore:25.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/4fa36d64a2d6870d5d6fd121654d3ba2/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.firebase:firebase-appcheck-safetynet:16.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/156e4659c3bec1634d664de34cf3b50c/transformed/jetified-firebase-appcheck-safetynet-16.1.2/AndroidManifest.xml:15:1-33:12
 MERGED from [com.google.firebase:firebase-appcheck:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/eee30d2c46da70226713658705372e1d/transformed/jetified-firebase-appcheck-18.0.0/AndroidManifest.xml:15:1-34:12
 MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/53daf98342d5b7ca5d8d9300f5508962/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:2:1-18:12
@@ -95,10 +95,10 @@ MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] /Use
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f1e8356ecc66dd8f227b762bf13932f0/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/84513d08b235c643691ee2acad7571dd/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:15:1-41:12
 MERGED from [com.google.android.gms:play-services-safetynet:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f2b295cc3fbe01193cbb4f56ac5bcc7b/transformed/jetified-play-services-safetynet-18.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d8aadd83972bd659992524187df9424a/transformed/jetified-recaptcha-18.6.1/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.play:integrity:1.3.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f2d61f08ae48f92824cd8f0ce501880e/transformed/jetified-integrity-1.3.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/8acc3d5c7646279991737ac4ca46e9ec/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:17:1-40:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/8c0577f943e89001580a07617037b900/transformed/jetified-play-services-auth-api-phone-18.0.2/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.recaptcha:recaptcha:18.5.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/91a59a9806b4f550f7935a713050749d/transformed/jetified-recaptcha-18.5.1/AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.android.play:integrity:1.3.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f2d61f08ae48f92824cd8f0ce501880e/transformed/jetified-integrity-1.3.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/ad20e87211dffc1aeefb39854f87c546/transformed/jetified-firebase-appcheck-interop-17.1.0/AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/e2a8fbf7a61d0bde3b201d4a377eb24e/transformed/jetified-firebase-database-collection-18.0.1/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-fido:20.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/1b404c6bbcb7240c9d18196d70d1ca72/transformed/jetified-play-services-fido-20.1.0/AndroidManifest.xml:2:1-10:12
@@ -139,61 +139,61 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/anoob
 MERGED from [io.grpc:grpc-android:1.62.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/621d45c6ac147d8ad2eb5d5f72bacca2/transformed/jetified-grpc-android-1.62.2/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.play:core-common:2.0.3] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/4438c19b5eb021d4a90e09a1e9039d80/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:2:1-21:12
 	package
-		INJECTED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/main/AndroidManifest.xml:1:11-69
 queries
-ADDED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/main/AndroidManifest.xml:38:5-43:15
+ADDED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/main/AndroidManifest.xml:38:5-43:15
 intent#action:name:android.intent.action.PROCESS_TEXT+data:mimeType:text/plain
-ADDED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/main/AndroidManifest.xml:39:9-42:18
+ADDED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/main/AndroidManifest.xml:39:9-42:18
 action#android.intent.action.PROCESS_TEXT
-ADDED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/main/AndroidManifest.xml:40:13-72
+ADDED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/main/AndroidManifest.xml:40:13-72
 	android:name
-		ADDED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/main/AndroidManifest.xml:40:21-70
+		ADDED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/main/AndroidManifest.xml:40:21-70
 data
-ADDED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/main/AndroidManifest.xml:41:13-50
+ADDED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/main/AndroidManifest.xml:41:13-50
 	android:mimeType
-		ADDED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/main/AndroidManifest.xml:41:19-48
+		ADDED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/main/AndroidManifest.xml:41:19-48
 uses-permission#android.permission.INTERNET
-ADDED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/debug/AndroidManifest.xml:6:5-66
-MERGED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:25:5-67
-MERGED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:25:5-67
-MERGED from [com.google.firebase:firebase-firestore:25.1.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/6504e7165fb2dba49e5214bd25ce1a58/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:11:5-67
-MERGED from [com.google.firebase:firebase-firestore:25.1.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/6504e7165fb2dba49e5214bd25ce1a58/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:11:5-67
+ADDED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/debug/AndroidManifest.xml:6:5-66
+MERGED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d58fc7cbe056191d4aa562e8db3cb6f9/transformed/jetified-firebase-database-21.0.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d58fc7cbe056191d4aa562e8db3cb6f9/transformed/jetified-firebase-database-21.0.0/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.5.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/91a59a9806b4f550f7935a713050749d/transformed/jetified-recaptcha-18.5.1/AndroidManifest.xml:7:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.5.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/91a59a9806b4f550f7935a713050749d/transformed/jetified-recaptcha-18.5.1/AndroidManifest.xml:7:5-67
+MERGED from [com.google.firebase:firebase-firestore:25.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/4fa36d64a2d6870d5d6fd121654d3ba2/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-firestore:25.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/4fa36d64a2d6870d5d6fd121654d3ba2/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d8aadd83972bd659992524187df9424a/transformed/jetified-recaptcha-18.6.1/AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d8aadd83972bd659992524187df9424a/transformed/jetified-recaptcha-18.6.1/AndroidManifest.xml:7:5-67
 	android:name
-		ADDED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/debug/AndroidManifest.xml:6:22-64
+		ADDED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/debug/AndroidManifest.xml:6:22-64
 uses-sdk
-INJECTED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/debug/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/debug/AndroidManifest.xml
-MERGED from [:cloud_firestore] /Users/anoobvalath/StudioProjects/smart_meter/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] /Users/anoobvalath/StudioProjects/smart_meter/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_app_check] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_app_check/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_app_check] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_app_check/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_auth] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_auth] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_database] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_database/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_database] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_database/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+INJECTED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/debug/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/debug/AndroidManifest.xml
+MERGED from [:cloud_firestore] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_app_check] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_app_check/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_app_check] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_app_check/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_database] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_database/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_database] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_database/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-appcheck-debug:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f7e87aacb067d93486cbaf9a5142ad0f/transformed/jetified-firebase-appcheck-debug-18.0.0/AndroidManifest.xml:18:5-44
 MERGED from [com.google.firebase:firebase-appcheck-debug:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f7e87aacb067d93486cbaf9a5142ad0f/transformed/jetified-firebase-appcheck-debug-18.0.0/AndroidManifest.xml:18:5-44
-MERGED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:21:5-23:151
-MERGED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:21:5-23:151
-MERGED from [com.google.firebase:firebase-firestore:25.1.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/6504e7165fb2dba49e5214bd25ce1a58/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-firestore:25.1.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/6504e7165fb2dba49e5214bd25ce1a58/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-appcheck-playintegrity:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/3f8f3d3b1e0ea49186adc4d891dc59d4/transformed/jetified-firebase-appcheck-playintegrity-18.0.0/AndroidManifest.xml:18:5-44
 MERGED from [com.google.firebase:firebase-appcheck-playintegrity:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/3f8f3d3b1e0ea49186adc4d891dc59d4/transformed/jetified-firebase-appcheck-playintegrity-18.0.0/AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:21:5-23:151
+MERGED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:21:5-23:151
 MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d58fc7cbe056191d4aa562e8db3cb6f9/transformed/jetified-firebase-database-21.0.0/AndroidManifest.xml:18:5-44
 MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d58fc7cbe056191d4aa562e8db3cb6f9/transformed/jetified-firebase-database-21.0.0/AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-firestore:25.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/4fa36d64a2d6870d5d6fd121654d3ba2/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-firestore:25.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/4fa36d64a2d6870d5d6fd121654d3ba2/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-appcheck-safetynet:16.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/156e4659c3bec1634d664de34cf3b50c/transformed/jetified-firebase-appcheck-safetynet-16.1.2/AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-appcheck-safetynet:16.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/156e4659c3bec1634d664de34cf3b50c/transformed/jetified-firebase-appcheck-safetynet-16.1.2/AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-appcheck:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/eee30d2c46da70226713658705372e1d/transformed/jetified-firebase-appcheck-18.0.0/AndroidManifest.xml:18:5-44
@@ -212,14 +212,14 @@ MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/anoobvalath/.gra
 MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/84513d08b235c643691ee2acad7571dd/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:19:5-44
 MERGED from [com.google.android.gms:play-services-safetynet:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f2b295cc3fbe01193cbb4f56ac5bcc7b/transformed/jetified-play-services-safetynet-18.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-safetynet:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f2b295cc3fbe01193cbb4f56ac5bcc7b/transformed/jetified-play-services-safetynet-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d8aadd83972bd659992524187df9424a/transformed/jetified-recaptcha-18.6.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d8aadd83972bd659992524187df9424a/transformed/jetified-recaptcha-18.6.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.play:integrity:1.3.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f2d61f08ae48f92824cd8f0ce501880e/transformed/jetified-integrity-1.3.0/AndroidManifest.xml:4:5-44
+MERGED from [com.google.android.play:integrity:1.3.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f2d61f08ae48f92824cd8f0ce501880e/transformed/jetified-integrity-1.3.0/AndroidManifest.xml:4:5-44
 MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/8acc3d5c7646279991737ac4ca46e9ec/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/8acc3d5c7646279991737ac4ca46e9ec/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/8c0577f943e89001580a07617037b900/transformed/jetified-play-services-auth-api-phone-18.0.2/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/8c0577f943e89001580a07617037b900/transformed/jetified-play-services-auth-api-phone-18.0.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.recaptcha:recaptcha:18.5.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/91a59a9806b4f550f7935a713050749d/transformed/jetified-recaptcha-18.5.1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.recaptcha:recaptcha:18.5.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/91a59a9806b4f550f7935a713050749d/transformed/jetified-recaptcha-18.5.1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.play:integrity:1.3.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f2d61f08ae48f92824cd8f0ce501880e/transformed/jetified-integrity-1.3.0/AndroidManifest.xml:4:5-44
-MERGED from [com.google.android.play:integrity:1.3.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f2d61f08ae48f92824cd8f0ce501880e/transformed/jetified-integrity-1.3.0/AndroidManifest.xml:4:5-44
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/ad20e87211dffc1aeefb39854f87c546/transformed/jetified-firebase-appcheck-interop-17.1.0/AndroidManifest.xml:18:5-44
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/ad20e87211dffc1aeefb39854f87c546/transformed/jetified-firebase-appcheck-interop-17.1.0/AndroidManifest.xml:18:5-44
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/e2a8fbf7a61d0bde3b201d4a377eb24e/transformed/jetified-firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
@@ -299,31 +299,31 @@ MERGED from [io.grpc:grpc-android:1.62.2] /Users/anoobvalath/.gradle/caches/8.12
 MERGED from [com.google.android.play:core-common:2.0.3] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/4438c19b5eb021d4a90e09a1e9039d80/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.play:core-common:2.0.3] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/4438c19b5eb021d4a90e09a1e9039d80/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
-		ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:23:9-148
+		ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:23:9-148
 	android:targetSdkVersion
-		INJECTED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/anoobvalath/StudioProjects/smart_meter/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/android/app/src/debug/AndroidManifest.xml
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:cloud_firestore] /Users/anoobvalath/StudioProjects/smart_meter/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_app_check] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_app_check/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_app_check] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_app_check/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_auth] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_auth] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_database] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_database/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_database] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_database/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
+ADDED from [:cloud_firestore] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_app_check] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_app_check/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_app_check] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_app_check/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_auth] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_auth] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_database] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_database/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_database] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_database/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [com.google.firebase:firebase-appcheck-debug:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f7e87aacb067d93486cbaf9a5142ad0f/transformed/jetified-firebase-appcheck-debug-18.0.0/AndroidManifest.xml:22:9-28:19
 MERGED from [com.google.firebase:firebase-appcheck-debug:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f7e87aacb067d93486cbaf9a5142ad0f/transformed/jetified-firebase-appcheck-debug-18.0.0/AndroidManifest.xml:22:9-28:19
-MERGED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:66:9-72:19
-MERGED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:66:9-72:19
-MERGED from [com.google.firebase:firebase-firestore:25.1.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/6504e7165fb2dba49e5214bd25ce1a58/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:14:9-23:19
-MERGED from [com.google.firebase:firebase-firestore:25.1.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/6504e7165fb2dba49e5214bd25ce1a58/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:14:9-23:19
 MERGED from [com.google.firebase:firebase-appcheck-playintegrity:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/3f8f3d3b1e0ea49186adc4d891dc59d4/transformed/jetified-firebase-appcheck-playintegrity-18.0.0/AndroidManifest.xml:22:9-28:19
 MERGED from [com.google.firebase:firebase-appcheck-playintegrity:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/3f8f3d3b1e0ea49186adc4d891dc59d4/transformed/jetified-firebase-appcheck-playintegrity-18.0.0/AndroidManifest.xml:22:9-28:19
+MERGED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:66:9-72:19
+MERGED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:66:9-72:19
 MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d58fc7cbe056191d4aa562e8db3cb6f9/transformed/jetified-firebase-database-21.0.0/AndroidManifest.xml:26:9-35:19
 MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d58fc7cbe056191d4aa562e8db3cb6f9/transformed/jetified-firebase-database-21.0.0/AndroidManifest.xml:26:9-35:19
+MERGED from [com.google.firebase:firebase-firestore:25.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/4fa36d64a2d6870d5d6fd121654d3ba2/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:14:9-23:19
+MERGED from [com.google.firebase:firebase-firestore:25.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/4fa36d64a2d6870d5d6fd121654d3ba2/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:14:9-23:19
 MERGED from [com.google.firebase:firebase-appcheck-safetynet:16.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/156e4659c3bec1634d664de34cf3b50c/transformed/jetified-firebase-appcheck-safetynet-16.1.2/AndroidManifest.xml:24:9-30:19
 MERGED from [com.google.firebase:firebase-appcheck-safetynet:16.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/156e4659c3bec1634d664de34cf3b50c/transformed/jetified-firebase-appcheck-safetynet-16.1.2/AndroidManifest.xml:24:9-30:19
 MERGED from [com.google.firebase:firebase-appcheck:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/eee30d2c46da70226713658705372e1d/transformed/jetified-firebase-appcheck-18.0.0/AndroidManifest.xml:22:9-31:19
@@ -339,119 +339,107 @@ MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/anoobvalath/.gra
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/84513d08b235c643691ee2acad7571dd/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:32:13-43
 	android:name
-		ADDED from [:cloud_firestore] /Users/anoobvalath/StudioProjects/smart_meter/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:8:18-89
+		ADDED from [:cloud_firestore] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:8:18-89
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
-ADDED from [:cloud_firestore] /Users/anoobvalath/StudioProjects/smart_meter/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:cloud_firestore] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:cloud_firestore] /Users/anoobvalath/StudioProjects/smart_meter/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:cloud_firestore] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:cloud_firestore] /Users/anoobvalath/StudioProjects/smart_meter/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-134
+		ADDED from [:cloud_firestore] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-134
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.appcheck.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_app_check] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_app_check/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_app_check] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_app_check/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_app_check] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_app_check/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_app_check] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_app_check/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_app_check] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_app_check/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-127
+		ADDED from [:firebase_app_check] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_app_check/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-127
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar
-ADDED from [:firebase_auth] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_auth] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_auth] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_auth] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_auth] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
+		ADDED from [:firebase_auth] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_database] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_database/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_database] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_database/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_database] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_database/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_database] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_database/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_database] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_database/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-127
+		ADDED from [:firebase_database] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_database/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-127
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
-ADDED from [:firebase_core] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_core] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_core] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_core] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_core] /Users/anoobvalath/StudioProjects/smart_meter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
+		ADDED from [:firebase_core] /Users/anoobvalath/Documents/Flutter_Backup/smart_meter/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
 meta-data#com.google.firebase.components:com.google.firebase.appcheck.debug.FirebaseAppCheckDebugRegistrar
 ADDED from [com.google.firebase:firebase-appcheck-debug:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f7e87aacb067d93486cbaf9a5142ad0f/transformed/jetified-firebase-appcheck-debug-18.0.0/AndroidManifest.xml:25:13-27:85
 	android:value
 		ADDED from [com.google.firebase:firebase-appcheck-debug:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f7e87aacb067d93486cbaf9a5142ad0f/transformed/jetified-firebase-appcheck-debug-18.0.0/AndroidManifest.xml:27:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-appcheck-debug:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/f7e87aacb067d93486cbaf9a5142ad0f/transformed/jetified-firebase-appcheck-debug-18.0.0/AndroidManifest.xml:26:17-128
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:26:5-79
-MERGED from [com.google.firebase:firebase-firestore:25.1.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/6504e7165fb2dba49e5214bd25ce1a58/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:10:5-79
-MERGED from [com.google.firebase:firebase-firestore:25.1.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/6504e7165fb2dba49e5214bd25ce1a58/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:10:5-79
-MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d58fc7cbe056191d4aa562e8db3cb6f9/transformed/jetified-firebase-database-21.0.0/AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d58fc7cbe056191d4aa562e8db3cb6f9/transformed/jetified-firebase-database-21.0.0/AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.recaptcha:recaptcha:18.5.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/91a59a9806b4f550f7935a713050749d/transformed/jetified-recaptcha-18.5.1/AndroidManifest.xml:8:5-79
-MERGED from [com.google.android.recaptcha:recaptcha:18.5.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/91a59a9806b4f550f7935a713050749d/transformed/jetified-recaptcha-18.5.1/AndroidManifest.xml:8:5-79
-MERGED from [io.grpc:grpc-android:1.62.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/621d45c6ac147d8ad2eb5d5f72bacca2/transformed/jetified-grpc-android-1.62.2/AndroidManifest.xml:7:5-79
-MERGED from [io.grpc:grpc-android:1.62.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/621d45c6ac147d8ad2eb5d5f72bacca2/transformed/jetified-grpc-android-1.62.2/AndroidManifest.xml:7:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:26:22-76
-activity#com.google.firebase.auth.internal.GenericIdpActivity
-ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:29:9-46:20
-	android:excludeFromRecents
-		ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:31:13-46
-	android:launchMode
-		ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:33:13-44
-	android:exported
-		ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:32:13-36
-	android:theme
-		ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:34:13-72
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:30:13-80
-intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
-ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:35:13-45:29
-action#android.intent.action.VIEW
-ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:36:17-69
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:36:25-66
-category#android.intent.category.DEFAULT
-ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:38:17-76
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:38:27-73
-category#android.intent.category.BROWSABLE
-ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:39:17-78
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:39:27-75
-activity#com.google.firebase.auth.internal.RecaptchaActivity
-ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:47:9-64:20
-	android:excludeFromRecents
-		ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:49:13-46
-	android:launchMode
-		ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:51:13-44
-	android:exported
-		ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:50:13-36
-	android:theme
-		ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:52:13-72
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:48:13-79
-intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
-ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:53:13-63:29
-meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
-ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:69:13-71:85
-	android:value
-		ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:71:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:23.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/9d3b50329de9c811ef98085e018266eb/transformed/jetified-firebase-auth-23.1.0/AndroidManifest.xml:70:17-109
-meta-data#com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar
-ADDED from [com.google.firebase:firebase-firestore:25.1.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/6504e7165fb2dba49e5214bd25ce1a58/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:17:13-19:85
-	android:value
-		ADDED from [com.google.firebase:firebase-firestore:25.1.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/6504e7165fb2dba49e5214bd25ce1a58/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:19:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-firestore:25.1.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/6504e7165fb2dba49e5214bd25ce1a58/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:18:17-122
-meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
-ADDED from [com.google.firebase:firebase-firestore:25.1.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/6504e7165fb2dba49e5214bd25ce1a58/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:20:13-22:85
-	android:value
-		ADDED from [com.google.firebase:firebase-firestore:25.1.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/6504e7165fb2dba49e5214bd25ce1a58/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:22:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-firestore:25.1.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/6504e7165fb2dba49e5214bd25ce1a58/transformed/jetified-firebase-firestore-25.1.1/AndroidManifest.xml:21:17-111
 meta-data#com.google.firebase.components:com.google.firebase.appcheck.playintegrity.FirebaseAppCheckPlayIntegrityRegistrar
 ADDED from [com.google.firebase:firebase-appcheck-playintegrity:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/3f8f3d3b1e0ea49186adc4d891dc59d4/transformed/jetified-firebase-appcheck-playintegrity-18.0.0/AndroidManifest.xml:25:13-27:85
 	android:value
 		ADDED from [com.google.firebase:firebase-appcheck-playintegrity:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/3f8f3d3b1e0ea49186adc4d891dc59d4/transformed/jetified-firebase-appcheck-playintegrity-18.0.0/AndroidManifest.xml:27:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-appcheck-playintegrity:18.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/3f8f3d3b1e0ea49186adc4d891dc59d4/transformed/jetified-firebase-appcheck-playintegrity-18.0.0/AndroidManifest.xml:26:17-144
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d58fc7cbe056191d4aa562e8db3cb6f9/transformed/jetified-firebase-database-21.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d58fc7cbe056191d4aa562e8db3cb6f9/transformed/jetified-firebase-database-21.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-firestore:25.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/4fa36d64a2d6870d5d6fd121654d3ba2/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-firestore:25.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/4fa36d64a2d6870d5d6fd121654d3ba2/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d8aadd83972bd659992524187df9424a/transformed/jetified-recaptcha-18.6.1/AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d8aadd83972bd659992524187df9424a/transformed/jetified-recaptcha-18.6.1/AndroidManifest.xml:8:5-79
+MERGED from [io.grpc:grpc-android:1.62.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/621d45c6ac147d8ad2eb5d5f72bacca2/transformed/jetified-grpc-android-1.62.2/AndroidManifest.xml:7:5-79
+MERGED from [io.grpc:grpc-android:1.62.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/621d45c6ac147d8ad2eb5d5f72bacca2/transformed/jetified-grpc-android-1.62.2/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:26:22-76
+activity#com.google.firebase.auth.internal.GenericIdpActivity
+ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:29:9-46:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:31:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:33:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:32:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:34:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:30:13-80
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
+ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:35:13-45:29
+action#android.intent.action.VIEW
+ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:36:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:38:17-76
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:38:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:39:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:39:27-75
+activity#com.google.firebase.auth.internal.RecaptchaActivity
+ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:47:9-64:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:49:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:51:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:50:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:52:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:48:13-79
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
+ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:53:13-63:29
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:69:13-71:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:71:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.2.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/2abd8c1ecca1df88422c1c0c98f5ea1d/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:70:17-109
 meta-data#com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar
 ADDED from [com.google.firebase:firebase-database:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d58fc7cbe056191d4aa562e8db3cb6f9/transformed/jetified-firebase-database-21.0.0/AndroidManifest.xml:29:13-31:85
 	android:value
@@ -464,6 +452,18 @@ ADDED from [com.google.firebase:firebase-database:21.0.0] /Users/anoobvalath/.gr
 		ADDED from [com.google.firebase:firebase-database:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d58fc7cbe056191d4aa562e8db3cb6f9/transformed/jetified-firebase-database-21.0.0/AndroidManifest.xml:34:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-database:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d58fc7cbe056191d4aa562e8db3cb6f9/transformed/jetified-firebase-database-21.0.0/AndroidManifest.xml:33:17-109
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar
+ADDED from [com.google.firebase:firebase-firestore:25.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/4fa36d64a2d6870d5d6fd121654d3ba2/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:17:13-19:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:25.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/4fa36d64a2d6870d5d6fd121654d3ba2/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:19:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:25.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/4fa36d64a2d6870d5d6fd121654d3ba2/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:18:17-122
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:25.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/4fa36d64a2d6870d5d6fd121654d3ba2/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:25.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/4fa36d64a2d6870d5d6fd121654d3ba2/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:25.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/4fa36d64a2d6870d5d6fd121654d3ba2/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:21:17-111
 meta-data#com.google.firebase.components:com.google.firebase.appcheck.safetynet.FirebaseAppCheckSafetyNetRegistrar
 ADDED from [com.google.firebase:firebase-appcheck-safetynet:16.1.2] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/156e4659c3bec1634d664de34cf3b50c/transformed/jetified-firebase-appcheck-safetynet-16.1.2/AndroidManifest.xml:27:13-29:85
 	android:value
@@ -536,6 +536,10 @@ ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/anoobvalath/.grad
 		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/84513d08b235c643691ee2acad7571dd/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:37:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/84513d08b235c643691ee2acad7571dd/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:36:17-109
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from [com.google.android.recaptcha:recaptcha:18.6.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d8aadd83972bd659992524187df9424a/transformed/jetified-recaptcha-18.6.1/AndroidManifest.xml:9:5-98
+	android:name
+		ADDED from [com.google.android.recaptcha:recaptcha:18.6.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/d8aadd83972bd659992524187df9424a/transformed/jetified-recaptcha-18.6.1/AndroidManifest.xml:9:22-95
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
 ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/8acc3d5c7646279991737ac4ca46e9ec/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
 	android:excludeFromRecents
@@ -556,10 +560,6 @@ ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/anoobvalath
 		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/8acc3d5c7646279991737ac4ca46e9ec/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:36:13-107
 	android:name
 		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/8acc3d5c7646279991737ac4ca46e9ec/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:34:13-89
-uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
-ADDED from [com.google.android.recaptcha:recaptcha:18.5.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/91a59a9806b4f550f7935a713050749d/transformed/jetified-recaptcha-18.5.1/AndroidManifest.xml:9:5-98
-	android:name
-		ADDED from [com.google.android.recaptcha:recaptcha:18.5.1] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/91a59a9806b4f550f7935a713050749d/transformed/jetified-recaptcha-18.5.1/AndroidManifest.xml:9:22-95
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/anoobvalath/.gradle/caches/8.12.1/transforms/dc442ceb3d6ac4696bd417a2fec2a553/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
 	android:exported

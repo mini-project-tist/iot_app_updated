@@ -25,9 +25,9 @@ class SmartMeterApp extends StatelessWidget {
     return MaterialApp(
         theme: ThemeData(
           fontFamily: 'AmazonEmber',
-          shadowColor: off_white,
+          shadowColor: offWhite,
         ),
-        initialRoute: Device1.id,
+        initialRoute: HomePage.id,
         routes: {
           HomePage.id: (context) => const HomePage(),
           LoginPage.id: (context) => const LoginPage(),
