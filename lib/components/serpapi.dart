@@ -29,6 +29,7 @@ class SerpApiService {
             "title": item["title"] ?? "No Title",
             "price": item["price"] ?? "No Price",
             "rating": item["rating"]?.toString() ?? "No Rating",
+            "link": item["product_link"] ?? "#", // Added product link
           };
         }).toList();
       } else {

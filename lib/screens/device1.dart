@@ -6,6 +6,7 @@ import '../components/serpapi.dart';
 import '/components/spacing.dart';
 import '../components/heading.dart';
 import '../constants.dart';
+import 'package:intl/intl.dart';
 import 'package:http/http.dart' as http;
 import 'package:firebase_database/firebase_database.dart';
 
@@ -29,10 +30,12 @@ class _Device1State extends State<Device1> {
   List<FlSpot> powerData = [];
   List<String> timeLabels = []; // Store extracted time strings
   String tips = '';
+  late String light;
 
   @override
   void initState() {
     super.initState();
+    fetchSwitch();
     fetchAndDisplayPower();
     fetchData("bulb").then((data) {
       tips = data;
@@ -40,6 +43,23 @@ class _Device1State extends State<Device1> {
     }).catchError((error) {
       print(error);
     });
+  }
+  Future<void> fetchSwitch() async {
+    DatabaseReference ref = FirebaseDatabase.instance.ref("status/s1");
+
+    DatabaseEvent event = await ref.once();
+
+    if (event.snapshot.exists) {
+      var lightStatus = event.snapshot.value;
+
+      setState(() {
+        light = lightStatus.toString(); // Store in variable
+      });
+
+      print("Light Status: $light");
+    } else {
+      print("No data found under status/s1");
+    }
   }
 
   void showFaultPopup() {
@@ -66,7 +86,7 @@ class _Device1State extends State<Device1> {
     ref.onValue.listen((DatabaseEvent event) {
       if (event.snapshot.exists && event.snapshot.value is Map) {
         Map<dynamic, dynamic> data =
-            event.snapshot.value as Map<dynamic, dynamic>;
+        event.snapshot.value as Map<dynamic, dynamic>;
 
         List<FlSpot> graphData = [];
         List<String> labels = [];
@@ -125,7 +145,7 @@ class _Device1State extends State<Device1> {
 
             print("Latest power reading for today: $power at $latestKey");
             // Call `search()` only if power > 9 and recommendations are empty
-            if (power > 9 && recommendations.isEmpty) {
+            if ((power > 9 || (power == 0 && light == "HIGH")) && recommendations.isEmpty) {
               showFaultPopup();
               search();
             }
@@ -140,6 +160,7 @@ class _Device1State extends State<Device1> {
       }
     });
   }
+
 
   void search() async {
     print("Fetching recommendations...");
@@ -168,7 +189,7 @@ class _Device1State extends State<Device1> {
             Navigator.pushNamed(context, UserHome.id);
           },
         ),
-        title: TitleHeading(title: 'Device 1'),
+        title: TitleHeading(title: 'BEE PowerCell Bulb'),
       ),
       body: Container(
         height: double.infinity,
@@ -203,7 +224,7 @@ class _Device1State extends State<Device1> {
                           axisLineStyle: AxisLineStyle(
                               cornerStyle: CornerStyle.bothCurve,
                               thickness: 20),
-                          maximum: 100,
+                          maximum: 30,
                           annotations: [
                             GaugeAnnotation(
                               widget: Text(
@@ -245,6 +266,7 @@ class _Device1State extends State<Device1> {
             ),
             Spacing(),
             // Line Graph for Power History
+
             ExpansionTile(
               title: Text(
                 "Power Consumption",
@@ -271,9 +293,7 @@ class _Device1State extends State<Device1> {
                       child: LineChart(
                         LineChartData(
                           minY: 0,
-                          // Minimum value on Y-axis
-                          maxY: 200,
-                          // Maximum value on Y-axis
+                          maxY: 30,
                           gridData: FlGridData(
                             show: false,
                           ),
@@ -291,10 +311,8 @@ class _Device1State extends State<Device1> {
                               sideTitles: SideTitles(
                                 showTitles: true,
                                 minIncluded: false,
-                                interval: 100,
-                                // Labels every 100 units
+                                interval: 10,
                                 reservedSize: 40,
-                                // Adjust spacing
                                 getTitlesWidget: (value, meta) {
                                   if (value % 1 == 0) {
                                     return Padding(
@@ -302,9 +320,10 @@ class _Device1State extends State<Device1> {
                                       child: Text(
                                         value.toInt().toString(),
                                         style: TextStyle(
-                                            color: blackColour,
-                                            fontSize: 7,
-                                            fontWeight: FontWeight.bold),
+                                          color: blackColour,
+                                          fontSize: 7,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     );
                                   }
@@ -332,17 +351,15 @@ class _Device1State extends State<Device1> {
                                 getTitlesWidget: (value, meta) {
                                   int index = value.toInt();
                                   if (index >= 0 && index < timeLabels.length) {
+                                    // Reverse index order
+                                    int reversedIndex = timeLabels.length - 1 - index;
                                     return Transform.rotate(
                                       angle: -0.4,
-                                      // Rotate for better readability
                                       child: Padding(
                                         padding: const EdgeInsets.only(
-                                            top: 8.0,
-                                            bottom: 8,
-                                            left: 12,
-                                            right: 12),
+                                            top: 8.0, bottom: 8, left: 12, right: 12),
                                         child: Text(
-                                          timeLabels[index],
+                                          timeLabels[reversedIndex], // Use reversed order
                                           style: TextStyle(
                                             fontSize: 7,
                                             color: blackColour,
@@ -365,27 +382,29 @@ class _Device1State extends State<Device1> {
                               color: Colors.blue,
                               barWidth: 2,
                               belowBarData: BarAreaData(
-                                  show: true,
-                                  color: Colors.blue.withOpacity(0.3)),
+                                show: true,
+                                gradient: LinearGradient(
+                                  colors: [
+                                    Colors.blue.withOpacity(0.5), // Light blue at the top
+                                    Colors.blue.withOpacity(0.1)  // Fading blue at the bottom
+                                  ],
+                                  begin: Alignment.topCenter,
+                                  end: Alignment.bottomCenter,
+                                ),
+                              ),
+
                               dotData: FlDotData(
                                 show: true,
                                 getDotPainter: (spot, percent, barData, index) {
-                                  // Find the maximum y-value in the dataset
-                                  double maxYValue = powerData
-                                      .map((e) => e.y)
-                                      .reduce((a, b) => a > b ? a : b);
+                                  double maxYValue =
+                                  powerData.map((e) => e.y).reduce((a, b) => a > b ? a : b);
 
                                   return FlDotCirclePainter(
                                     radius: 2,
-                                    // Increase dot size for better visibility
-                                    color: spot.y == maxYValue
-                                        ? Colors.red
-                                        : Colors.blue,
-                                    // Red if max value
+                                    color: spot.y == maxYValue ? Colors.red : Colors.blue,
                                     strokeWidth: 1,
-                                    strokeColor: spot.y == maxYValue
-                                        ? Colors.red
-                                        : Colors.blueGrey,
+                                    strokeColor:
+                                    spot.y == maxYValue ? Colors.red : Colors.blueGrey,
                                   );
                                 },
                               ),
@@ -393,6 +412,7 @@ class _Device1State extends State<Device1> {
                           ],
                         ),
                       ),
+
                     ),
                   ),
                 ),
@@ -425,17 +445,17 @@ class _Device1State extends State<Device1> {
                             style: TextStyle(fontSize: 18, color: blackColour),
                           )
                         : ListView.builder(
-                            itemCount: recommendations.length,
-                            itemBuilder: (context, index) {
-                              final item = recommendations[index];
-                              return ListTile(
-                                title: Text(item["title"] ?? "No Title"),
-                                subtitle: Text("Price: ${item["price"]}"),
-                                trailing:
-                                    Text("Product Rating: ${item["rating"]}"),
-                              );
-                            },
-                          ),
+                      itemCount: recommendations.length,
+                      itemBuilder: (context, index) {
+                        final item = recommendations[index];
+                        return ListTile(
+                          title: Text(item["title"] ?? "No Title"),
+                          trailing: Text("Price: ${item["price"]}"),
+                          //
+                          // trailing: Text("Rating: ${item["rating"]}"),
+                        );
+                      },
+                    ),
                   ),
                 ),
               ],

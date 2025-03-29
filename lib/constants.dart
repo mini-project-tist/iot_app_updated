@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 const greyColour = Color(0xff363347);
 const blueColour = Color(0xff5B9DFD);
+const darkBlueColour = Color(0xff2F3E71);
 const offWhiteColour = Color(0xfff1f4f8);
 const yellowColour = Color(0xfffcd947);
 const blackColour = Color.fromRGBO(0, 0, 0, 0.5);

@@ -168,7 +168,7 @@ class _Device2State extends State<Device2> {
             Navigator.pushNamed(context, UserHome.id);
           },
         ),
-        title: TitleHeading(title: 'Device 1'),
+        title: TitleHeading(title: 'Device 2'),
       ),
       body: Container(
         height: double.infinity,

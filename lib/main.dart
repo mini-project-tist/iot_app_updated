@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smart_meter/screens/device1.dart';
-import 'package:smart_meter/screens/power.dart';
+import 'package:smart_meter/screens/energy.dart';
 import 'constants.dart';
 import 'screens/login_page.dart';
 import 'screens/home_page.dart';
@@ -23,6 +23,7 @@ class SmartMeterApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           fontFamily: 'AmazonEmber',
           shadowColor: offWhite,
@@ -33,7 +34,7 @@ class SmartMeterApp extends StatelessWidget {
           LoginPage.id: (context) => const LoginPage(),
           SignUp.id: (context) => const SignUp(),
           UserHome.id: (context) => const UserHome(),
-          Power.id: (context) => const Power(),
+          Energy.id: (context) => const Energy(),
           Device1.id: (context) => const Device1(),
         });
   }
