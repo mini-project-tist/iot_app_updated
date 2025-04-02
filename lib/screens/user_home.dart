@@ -7,16 +7,15 @@ import '/components/spacing.dart';
 import '/screens/login_page.dart';
 import '../components/heading.dart';
 import '../constants.dart';
-import 'package:intl/intl.dart';
+//import 'package:intl/intl.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'device1.dart';
 
 double power = 0.0;
-double price = 0.0;
 double energy = 0.0;
 double bill = 0.0;
 double targetBill = 0.0;
-late String futurePredictedMessage;
+String futurePredictedMessage = '';
 late String predictedMessage;
 
 class UserHome extends StatefulWidget {
@@ -44,6 +43,7 @@ class _UserHomeState extends State<UserHome> {
     calculateMonthlyBill();
     getCurrentUser();
   }
+
   Future<void> fetchTargetBillandStatus() async {
     try {
       DatabaseReference ref = FirebaseDatabase.instance.ref("target_bill");
@@ -67,14 +67,15 @@ class _UserHomeState extends State<UserHome> {
 
     if (event.snapshot.exists) {
       var lightStatus = event.snapshot.value;
-      if(lightStatus.toString()=="LOW")
+      if (lightStatus.toString() == "LOW") {
         setState(() {
           light1 = false;
         });
-      else
+      } else {
         setState(() {
           light1 = true;
         });
+      }
       print("Light Status: $light1");
     } else {
       print("No data found under status/s1");
@@ -87,7 +88,8 @@ class _UserHomeState extends State<UserHome> {
     DatabaseEvent event = await ref.once();
     int dayCount = 0;
     if (event.snapshot.exists && event.snapshot.value is Map) {
-      Map<dynamic, dynamic> energyData = event.snapshot.value as Map<dynamic, dynamic>;
+      Map<dynamic, dynamic> energyData =
+          event.snapshot.value as Map<dynamic, dynamic>;
       double totalEnergy = 0.0;
       DateTime now = DateTime.now();
       String currentMonth = now.month.toString().padLeft(2, '0');
@@ -107,60 +109,62 @@ class _UserHomeState extends State<UserHome> {
       // Calculate charges based on updated slabs
       double remainingEnergy = totalEnergy;
       if (remainingEnergy > 500) {
-        newBill += remainingEnergy * 8.80;
+        newBill += remainingEnergy * 9;
       } else if (remainingEnergy > 400) {
-        newBill += remainingEnergy * 7.90;
+        newBill += remainingEnergy * 8.05;
       } else if (remainingEnergy > 350) {
-        newBill += remainingEnergy * 7.60;
+        newBill += remainingEnergy * 7.75;
       } else if (remainingEnergy > 300) {
-        newBill += remainingEnergy * 7.25;
+        newBill += remainingEnergy * 7.4;
       } else if (remainingEnergy > 250) {
-        newBill += remainingEnergy * 6.40;
+        newBill += remainingEnergy * 6.55;
       } else {
         if (remainingEnergy > 200) {
-          newBill += (remainingEnergy - 200) * 8.2;
+          newBill += (remainingEnergy - 200) * 8.35;
           remainingEnergy = 200;
         }
         if (remainingEnergy > 150) {
-          newBill += (remainingEnergy - 150) *65.95;
+          newBill += (remainingEnergy - 150) * 7.1;
           remainingEnergy = 150;
         }
         if (remainingEnergy > 100) {
-          newBill += (remainingEnergy - 100) * 5.1;
+          newBill += (remainingEnergy - 100) * 5.25;
           remainingEnergy = 100;
         }
         if (remainingEnergy > 50) {
-          newBill += (remainingEnergy - 50) * 4.05;
+          newBill += (remainingEnergy - 50) * 4.15;
           remainingEnergy = 50;
         }
-        newBill += remainingEnergy * 3.25;
+        newBill += remainingEnergy * 3.3;
       }
-
-      // Add fixed charge based on total consumption
+      double electricityDuty = 0.1 * newBill;
+          // Add fixed charge based on total consumption
       double fixedCharge = 0.0;
       if (totalEnergy > 500) {
-        fixedCharge = 260.0;
+        fixedCharge = 290.0;
       } else if (totalEnergy > 400) {
-        fixedCharge = 230.0;
+        fixedCharge = 265.0;
       } else if (totalEnergy > 350) {
-        fixedCharge = 200.0;
+        fixedCharge = 235.0;
       } else if (totalEnergy > 300) {
-        fixedCharge = 175.0;
+        fixedCharge = 215.0;
       } else if (totalEnergy > 250) {
-        fixedCharge = 150.0;
+        fixedCharge = 190.0;
       } else if (totalEnergy > 200) {
-        fixedCharge = 130.0;
+        fixedCharge = 145.0;
       } else if (totalEnergy > 150) {
-        fixedCharge = 120.0;
+        fixedCharge = 130.0;
       } else if (totalEnergy > 100) {
-        fixedCharge = 85.0;
+        fixedCharge = 95.0;
       } else if (totalEnergy > 50) {
-        fixedCharge = 65.0;
+        fixedCharge = 75.0;
       } else {
-        fixedCharge = 40.0;
+        fixedCharge = 45.0;
       }
-
-      newBill = double.parse((newBill + fixedCharge).toStringAsFixed(2));
+      double meterRent = 6.0;
+      double meterGst = 0.09 * 6;
+      double fuelSurcharge = 0.10 * totalEnergy;
+      newBill = double.parse((newBill + fixedCharge + electricityDuty + meterRent + (meterGst*2) + (fuelSurcharge*2)).toStringAsFixed(2));
 
       // Calculate average daily bill
       double averageDailyBill = newBill / dayCount;
@@ -178,28 +182,29 @@ class _UserHomeState extends State<UserHome> {
         futurePredictedMessage = '';
         if (predictedBill > targetBill) {
           setState(() {
-            futurePredictedMessage = "Warning: Your bill may exceed the target on day ${now.day + i} of this month.";
+            futurePredictedMessage =
+                "Warning: Your bill may exceed the target on ${now.day + i} of this month.";
           });
           break;
         }
       }
       // Check if the bill exceeds 75% of the target bill
-      if (targetBill > 0 && bill >= 0.75 * targetBill || predictedBill > targetBill) {
+      if (targetBill > 0 && bill >= 0.75 * targetBill ||
+          predictedBill > targetBill) {
         showTargetBillAlert();
       }
     }
   }
 
-
 // Function to show an alert dialog
   void showTargetBillAlert() {
     predictedMessage = '';
-    if (targetBill > 0 && bill >= 0.75 * targetBill)
-      {
-        setState(() {
-          predictedMessage = "Your current bill is ₹$bill, which has reached 75% of your target bill ₹$targetBill. Consider reducing your power usage.";
-        });
-      }
+    if (targetBill > 0 && bill >= 0.75 * targetBill) {
+      setState(() {
+        predictedMessage =
+            "Your current bill is ₹$bill, which has reached 75% of your target bill ₹$targetBill. Consider reducing your power usage.";
+      });
+    }
     showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -212,7 +217,8 @@ class _UserHomeState extends State<UserHome> {
           content: SizedBox(
             width: 300, // Adjust width as needed
             child: Column(
-              mainAxisSize: MainAxisSize.min, // Shrinks the column to fit content
+              mainAxisSize: MainAxisSize.min,
+              // Shrinks the column to fit content
               children: [
                 Text(
                   predictedMessage,
@@ -239,9 +245,8 @@ class _UserHomeState extends State<UserHome> {
     );
   }
 
-
   void fetchAndSumPower() async {
-    String currentDate = DateFormat('dd-MM-yyyy').format(DateTime.now());
+    String currentDate = "28-03-2025";//DateFormat('dd-MM-yyyy').format(DateTime.now());
     DataSnapshot snapshot = await ref.get();
     double newPower = 0.0;
     double newEnergy = 0.0;
@@ -249,34 +254,42 @@ class _UserHomeState extends State<UserHome> {
     if (snapshot.exists && snapshot.value is Map) {
       Map<dynamic, dynamic> data = snapshot.value as Map<dynamic, dynamic>;
 
+      // Debug: Print fetched data
+      print("Fetched data: ${snapshot.value}");
+
       data.forEach((key, value) {
         // Extract the date portion from the key
         List<String> keyParts = key.toString().split("_");
-        if (keyParts.length == 2 && keyParts[1] == currentDate){
+        if (keyParts.length == 2 && keyParts[1] == currentDate) {
           // Convert value to double safely
           double valueAsDouble = double.tryParse(value.toString()) ?? 0.0;
 
           newPower += valueAsDouble;
-          newEnergy = double.parse((newEnergy + valueAsDouble * (0.01 / 3600)).toStringAsFixed(2));
+          newEnergy += valueAsDouble * (0.01 / 3600);
         }
       });
     }
-
+    print("Computed Power: $newPower, Computed Energy: $newEnergy");
     setState(() {
-      power = power = double.parse(newPower.toStringAsFixed(2));  // Update power with correct sum
-      energy = newEnergy;
+      power = double.parse(newPower.toStringAsFixed(2));
+      energy = double.parse(newEnergy.toStringAsFixed(2));
+      print("Updated Energy: $energy"); // Debug print
     });
+
+    // Debug: Print before updating Firebase
+    print("Updating Firebase -> Energy: $energy");
 
     DatabaseReference powerRef = FirebaseDatabase.instance.ref("power");
     await powerRef.update({
-      currentDate: power, // Save today's total power under the date key
+      currentDate: power,
     });
 
     DatabaseReference energyRef = FirebaseDatabase.instance.ref("energy");
     await energyRef.update({
-      currentDate: energy, // Save today's total energy under the date key
+      currentDate: energy,
     });
   }
+
 
 
   void getCurrentUser() {
@@ -323,10 +336,10 @@ class _UserHomeState extends State<UserHome> {
               Card(
                 elevation: 3,
                 child: Container(
-                    decoration: BoxDecoration(
-                      gradient: yellowGradient,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
+                  decoration: BoxDecoration(
+                    gradient: yellowGradient,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
@@ -400,7 +413,7 @@ class _UserHomeState extends State<UserHome> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              '${bill}/-',
+                              '$bill/-',
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 25,
@@ -443,9 +456,11 @@ class _UserHomeState extends State<UserHome> {
                                         fillColor: yellowColour,
                                         contentPadding:
                                             const EdgeInsets.symmetric(
-                                                vertical: 10.0, horizontal: 20.0),
+                                                vertical: 10.0,
+                                                horizontal: 20.0),
                                         hintText: 'Target Bill',
-                                        hintStyle: TextStyle(color: blackColour),
+                                        hintStyle:
+                                            TextStyle(color: blackColour),
                                         prefixIcon: const Icon(
                                           Icons.currency_rupee_sharp,
                                           size: 30,
@@ -456,15 +471,17 @@ class _UserHomeState extends State<UserHome> {
                                         ),
                                       ),
                                       onChanged: (value) async {
-                                        double newTargetBill = double.tryParse(value) ?? 0.0;
+                                        double newTargetBill =
+                                            double.tryParse(value) ?? 0.0;
                                         setState(() {
-                                          targetBill = newTargetBill; // Update local variable
+                                          targetBill =
+                                              newTargetBill; // Update local variable
                                         });
 
                                         // Update the value in Firebase Realtime Database
-                                        await updateTargetBillInDatabase(newTargetBill);
+                                        await updateTargetBillInDatabase(
+                                            newTargetBill);
                                       },
-
                                     ),
                                     backgroundColor: Colors.white,
                                   );
@@ -510,7 +527,9 @@ class _UserHomeState extends State<UserHome> {
                               children: [
                                 Icon(
                                   Icons.lightbulb_circle_rounded,
-                                  color: light1 ? Colors.white : Color.fromRGBO(255,255,255,0.5),
+                                  color: light1
+                                      ? Colors.white
+                                      : Color.fromRGBO(255, 255, 255, 0.5),
                                   size: 60,
                                 ),
                                 Expanded(
@@ -531,7 +550,6 @@ class _UserHomeState extends State<UserHome> {
                                       style: BorderStyle.none,
                                     ),
                                   ),
-
                                   child: Text(
                                     'View profile',
                                     style: TextStyle(
@@ -545,7 +563,7 @@ class _UserHomeState extends State<UserHome> {
                             Row(
                               children: [
                                 Text(
-                                  'BEE PowerCell Bulb',
+                                  device_name,
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 25,
@@ -563,12 +581,16 @@ class _UserHomeState extends State<UserHome> {
                                     });
 
                                     // Reference to the status object in Firebase
-                                    DatabaseReference statusRef = FirebaseDatabase.instance.ref("status/s1");
+                                    DatabaseReference statusRef =
+                                        FirebaseDatabase.instance
+                                            .ref("status/s1");
 
-                                    if (!value) { // If the switch is turned off
+                                    if (!value) {
+                                      // If the switch is turned off
                                       statusRef.set("LOW");
                                     } else {
-                                      statusRef.set("HIGH"); // Optional: Set true when turned on
+                                      statusRef.set(
+                                          "HIGH"); // Optional: Set true when turned on
                                     }
                                   },
                                 ),
@@ -579,92 +601,6 @@ class _UserHomeState extends State<UserHome> {
                       ),
                     ),
                   ),
-                  // Spacing(),
-                  // Card(
-                  //   elevation: 8,
-                  //   child: Container(
-                  //     decoration: BoxDecoration(
-                  //       gradient: yellowGradient,
-                  //       borderRadius: BorderRadius.circular(10),
-                  //     ),
-                  //     child: Padding(
-                  //       padding: EdgeInsets.all(18),
-                  //       child: Column(
-                  //         mainAxisAlignment: MainAxisAlignment.start,
-                  //         children: [
-                  //           Row(
-                  //             children: [
-                  //               Icon(
-                  //                 Icons.lightbulb_circle_rounded,
-                  //                 color: light2 ? Colors.white : Color.fromRGBO(255,255,255,0.5),
-                  //                 size: 60,
-                  //               ),
-                  //               Expanded(
-                  //                 child: SizedBox(),
-                  //               ),
-                  //               ElevatedButton(
-                  //                 onPressed: () {
-                  //                   Navigator.pushNamed(context, Device2.id);
-                  //                 },
-                  //                 style: ElevatedButton.styleFrom(
-                  //                   shape: RoundedRectangleBorder(
-                  //                     borderRadius: BorderRadius.circular(10),
-                  //                   ),
-                  //                   backgroundColor: blueColour,
-                  //                   side: BorderSide(
-                  //                     width: 1.0,
-                  //                     color: Color.fromRGBO(0, 0, 0, 0.5),
-                  //                     style: BorderStyle.none,
-                  //                   ),
-                  //                 ),
-                  //
-                  //                 child: Text(
-                  //                   'View profile',
-                  //                   style: TextStyle(
-                  //                     color: Colors.white,
-                  //                   ),
-                  //                 ),
-                  //               ),
-                  //             ],
-                  //           ),
-                  //           Spacing(),
-                  //           Row(
-                  //             children: [
-                  //               Text(
-                  //                 'Crompton LED Bulb',
-                  //                 style: TextStyle(
-                  //                   color: Colors.white,
-                  //                   fontSize: 25,
-                  //                 ),
-                  //               ),
-                  //               Expanded(
-                  //                 child: SizedBox(),
-                  //               ),
-                  //               Switch(
-                  //                 value: light2,
-                  //                 activeColor: blueColour,
-                  //                 onChanged: (bool value) {
-                  //                   setState(() {
-                  //                     light2 = value;
-                  //                   });
-                  //
-                  //                   // Reference to the status object in Firebase
-                  //                   DatabaseReference statusRef = FirebaseDatabase.instance.ref("status/s2");
-                  //
-                  //                   if (!value) { // If the switch is turned off
-                  //                     statusRef.set("LOW");
-                  //                   } else {
-                  //                     statusRef.set("HIGH"); // Optional: Set true when turned on
-                  //                   }
-                  //                 },
-                  //               ),
-                  //             ],
-                  //           ),
-                  //         ],
-                  //       ),
-                  //     ),
-                  //   ),
-                  // ),
                 ],
               ),
             ],
@@ -674,6 +610,7 @@ class _UserHomeState extends State<UserHome> {
     );
   }
 }
+
 Future<void> updateTargetBillInDatabase(double newTargetBill) async {
   try {
     DatabaseReference ref = FirebaseDatabase.instance.ref("target_bill");
@@ -683,63 +620,3 @@ Future<void> updateTargetBillInDatabase(double newTargetBill) async {
     print("Error updating target bill: $e");
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // Calculate charges based on slabs
-// double remainingEnergy = totalEnergy;
-// if (remainingEnergy > 250) {
-//   newBill += (remainingEnergy - 250) * 7.60;
-//   remainingEnergy = 250;
-// }
-// if (remainingEnergy > 200) {
-//   newBill += (remainingEnergy - 200) * 6.40;
-//   remainingEnergy = 200;
-// }
-// if (remainingEnergy > 150) {
-//   newBill += (remainingEnergy - 150) * 4.80;
-//   remainingEnergy = 150;
-// }
-// if (remainingEnergy > 100) {
-//   newBill += (remainingEnergy - 100) * 3.70;
-//   remainingEnergy = 100;
-// }
-// if (remainingEnergy > 50) {
-//   newBill += (remainingEnergy - 50) * 3.15;
-//   remainingEnergy = 50;
-// }
-// newBill += remainingEnergy * 1.50;
-//
-// // Add fixed charge based on total consumption
-// double fixedCharge = 0.0;
-// if (totalEnergy > 250) {
-//   fixedCharge = 80.0;
-// } else if (totalEnergy > 200) {
-//   fixedCharge = 70.0;
-// } else if (totalEnergy > 150) {
-//   fixedCharge = 55.0;
-// } else if (totalEnergy > 100) {
-//   fixedCharge = 45.0;
-// } else if (totalEnergy > 50) {
-//   fixedCharge = 35.0;
-// }
-//
-// newBill = double.parse((newBill + fixedCharge).toStringAsFixed(2));

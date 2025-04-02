@@ -36,16 +36,24 @@ class _EnergyState extends State<Energy> {
 
       List<MapEntry<DateTime, double>> sortedEntries = [];
 
+      // Get current month and year
+      DateTime now = DateTime.now();
+      int currentMonth = now.month;
+      int currentYear = now.year;
+
       data.forEach((key, value) {
         try {
           // Parse the key (date) into DateTime
           DateTime parsedDate = DateFormat("dd-MM-yyyy").parse(key.toString());
 
-          // Convert value to double safely
-          double energyValue = (value as num).toDouble();
+          // Filter only the entries from the current month
+          if (parsedDate.month == currentMonth && parsedDate.year == currentYear) {
+            // Convert value to double safely
+            double energyValue = (value as num).toDouble();
 
-          // Store as a map entry (DateTime -> energyValue)
-          sortedEntries.add(MapEntry(parsedDate, energyValue));
+            // Store as a map entry (DateTime -> energyValue)
+            sortedEntries.add(MapEntry(parsedDate, energyValue));
+          }
         } catch (e) {
           print("Error parsing date: $e");
         }
@@ -75,9 +83,10 @@ class _EnergyState extends State<Energy> {
         dateLabels = tempLabels;
       });
 
-      print("Energy data sorted and updated.");
+      print("Filtered energy data for current month sorted and updated.");
     }
   }
+
 
 
   @override
@@ -95,7 +104,7 @@ class _EnergyState extends State<Energy> {
             Navigator.pushNamed(context, UserHome.id);
           },
         ),
-        title: TitleHeading(title: 'Electricity Usage'),
+        title: TitleHeading(title: 'Energy Usage'),
       ),
       body: Container(
         padding: const EdgeInsets.all(16.0),

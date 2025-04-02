@@ -6,7 +6,7 @@ import '../components/serpapi.dart';
 import '/components/spacing.dart';
 import '../components/heading.dart';
 import '../constants.dart';
-import 'package:intl/intl.dart';
+//import 'package:intl/intl.dart';
 import 'package:http/http.dart' as http;
 import 'package:firebase_database/firebase_database.dart';
 
@@ -37,7 +37,7 @@ class _Device1State extends State<Device1> {
     super.initState();
     fetchSwitch();
     fetchAndDisplayPower();
-    fetchData("bulb").then((data) {
+    fetchData(device_type).then((data) {
       tips = data;
       print(data);
     }).catchError((error) {
@@ -90,7 +90,7 @@ class _Device1State extends State<Device1> {
 
         List<FlSpot> graphData = [];
         List<String> labels = [];
-        int index = 0; // Track index for graph points
+        //int index = 0; // Track index for graph points
 
         // Get today's date in the same format as Firebase keys (dd-mm-yyyy)
         String todayDate = DateTime.now()
@@ -145,7 +145,7 @@ class _Device1State extends State<Device1> {
 
             print("Latest power reading for today: $power at $latestKey");
             // Call `search()` only if power > 9 and recommendations are empty
-            if ((power > 9 || (power == 0 && light == "HIGH")) && recommendations.isEmpty) {
+            if ((power > rating || (power == 0 && light == "HIGH")) && recommendations.isEmpty) {
               showFaultPopup();
               search();
             }
@@ -164,7 +164,7 @@ class _Device1State extends State<Device1> {
 
   void search() async {
     print("Fetching recommendations...");
-    final results = await serpApiService.fetchRecommendations("bulb", "9");
+    final results = await serpApiService.fetchRecommendations(device_type, rating.toString());
     print("Results received: $results");
 
     setState(() {
@@ -189,7 +189,7 @@ class _Device1State extends State<Device1> {
             Navigator.pushNamed(context, UserHome.id);
           },
         ),
-        title: TitleHeading(title: 'BEE PowerCell Bulb'),
+        title: TitleHeading(title: device_name),
       ),
       body: Container(
         height: double.infinity,
@@ -439,7 +439,7 @@ class _Device1State extends State<Device1> {
                   child: SizedBox(
                     height: 250,
                     width: 250,
-                    child: power < 9
+                    child: power < rating
                         ? Text(
                             "Device is not faulty. No recommendations needed.",
                             style: TextStyle(fontSize: 18, color: blackColour),
@@ -502,7 +502,7 @@ class _Device1State extends State<Device1> {
 
 Future<String> fetchData(String device) async {
   final response = await http.get(Uri.parse(
-      'https://majorprojectsmartmeter.pythonanywhere.com/?device=bulb'));
+      'https://majorprojectsmartmeter.pythonanywhere.com/?device=$device_type'));
 
   if (response.statusCode == 200) {
     // If the server returns a 200 OK response, return the response body

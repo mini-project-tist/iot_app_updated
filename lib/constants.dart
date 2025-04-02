@@ -84,3 +84,6 @@ const appIcon = Icon(
   color: Colors.white,
   size: 25,
 );
+String device_type = "bulb";
+double rating = 9;
+String device_name = "BEE PowerCell Bulb";

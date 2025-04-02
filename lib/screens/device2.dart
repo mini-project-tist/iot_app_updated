@@ -70,7 +70,7 @@ class _Device2State extends State<Device2> {
 
         List<FlSpot> graphData = [];
         List<String> labels = [];
-        int index = 0; // Track index for graph points
+        //int index = 0; // Track index for graph points
 
         // Get today's date in the same format as Firebase keys (dd-mm-yyyy)
         String todayDate = DateTime.now()
